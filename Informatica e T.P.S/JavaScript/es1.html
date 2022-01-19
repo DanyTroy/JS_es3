@@ -1,0 +1,71 @@
+<html>
+  <head>
+    <title>ES 1</title>
+  </head>
+  <body>
+    <!-- <button onclick="console.log('click da evento')">cliccami da evento</button>
+    <button onclick="funzioneClick('script')">cliccami da script</button> -->
+    <button id = "btn1">cliccami da evento</button>
+    <button id="btn2">cliccami da script</button>
+    <div id="div1">
+      <p>Non premere, per cortesia</p>
+    </div>
+    <button id="btn3">cliccami da listener</button>
+
+    <script>
+      // var funzioneClick = function () {
+      //   console.log("click da script");
+      // };
+      //funzioneClick();
+
+      // a che serve?
+      var funzioneClick1 = function (stringa) {
+        console.log("click da " + stringa);
+      };
+      var funzioneClick2 = function (stringa) {
+        console.log("click da " + stringa);
+      };
+      var funzioneClick3 = function (stringa) {
+        console.log("click da " + stringa);
+      };
+
+      var bottone1 = document.getElementById("btn1");
+      bottone3.addEventListener("click", function () {
+        funzioneClick("listener");
+        var bottone2 = document.getElementById("btn2");
+      bottone3.addEventListener("click", function () {
+        funzioneClick("listener");
+        var bottone3 = document.getElementById("btn3");
+      bottone3.addEventListener("click", function () {
+        funzioneClick("listener");
+
+        var div1 = document.getElementById("div1");
+        div1.setAttribute("style", "background-color: pink");
+        div1.innerHTML = "<h1>TI AVEVO DETTO DI NON CLICCARE MONA.</h1>";
+        var div2 = document.getElementById("div2");
+        div2.setAttribute("style", "background-color: pink");
+        div2.innerHTML = "<h1>TI AVEVO DETTO DI NON CLICCARE MONA.</h1>";
+        var div3 = document.getElementById("div3");
+        div3.setAttribute("style", "background-color: pink");
+        div3.innerHTML = "<h1>TI AVEVO DETTO DI NON CLICCARE MONA.</h1>";
+
+      // var rosso = true;
+      var bottone3 = document.getElementById("btn3");
+      bottone3.addEventListener("click", function () {
+        funzioneClick("listener");
+
+        var div1 = document.getElementById("div1");
+        div1.setAttribute("style", "background-color: pink");
+        div1.innerHTML = "<h1>TI AVEVO DETTO DI NON CLICCARE MONA.</h1>";
+
+      //   if (rosso === false) {
+      //     bottone3.removeAttribute("style");
+      //     rosso = true;
+      //   } else {
+      //     bottone3.setAttribute("style", "background-color: red");
+      //     rosso = false;
+      //   }
+      });
+    </script>
+  </body>
+</html>
